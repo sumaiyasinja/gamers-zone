@@ -10,9 +10,22 @@ body{
 .headings{
     text-align: center;
     font-family: Work Sans;
-    font-size: 45px;
+    font-size: 2.8rem;
     font-weight: 700;
+    /* border: 2px solid blueviolet; */
     
+}
+
+.button-primary{
+    padding: 1.2rem 2.5rem;
+    margin: 1.2rem 0.7rem;
+    border-radius: 3rem;
+    gap: 1rem;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
 }
 
 /* navbar styling start */
@@ -26,10 +39,11 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 2rem 9rem;
+    margin-bottom: 1rem;
 
 }
-.headings span{
-    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+.nav-left .headings span{
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -61,7 +75,7 @@ body{
     display: flex;
     color: #3C354F;
     align-items: center;
-    /* */
+    text-align: center;
     font-size: 1.125rem;
     font-weight: 500;
     gap: 2rem;
@@ -72,10 +86,8 @@ body{
     background: rgba(11, 2, 35, 0.10);
    align-items: center;
    gap: 1em;
-   padding:  0.6rem;
+   padding:  1rem 1.5rem;
    display: flex;
-    /* width: 262px;
-    height: 56px; */
 }
 .link-box span{
     color: #3C354F;
@@ -87,6 +99,7 @@ body{
 .youtbe, .titok{ 
     width: 2rem;
     height: 1.5rem;
+
 }
 
 /* Banner section styling */
@@ -96,6 +109,305 @@ body{
     align-items: center;
 
 }
-.textbox{
+.textbox .headings{
+    color: #0B0223;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
    /* margin: 2rem; */
 }
+.large-heading{
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 5.8rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.textbox li{
+    color: #534C64;
+
+    font-size: 20px;
+    margin: 1rem;
+    font-weight: 500;
+    list-style: none;
+}
+
+ .sign-in{
+    align-items: flex-start;
+background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+}
+.go-rogue {
+    border-radius: 48px;
+    background: #4EC5F7;
+   
+}
+/* gamer-section styling */
+.gamer-section{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+ 
+    
+   
+}
+.btn-knowmore{
+margin-top: 2rem;
+margin-bottom: 2rem;
+    
+}
+.gamer-headings{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: right;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.game-description{
+    color: #534C64;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: right;
+    margin-top: 2rem;   
+}
+
+.purpose-text{
+    color: #534C64;
+    text-align: right;
+    font-size: 1.3rem;
+    font-weight: 500;
+    width: 100%;
+}
+.purpose-text span{
+
+    font-size: 1.6rem;
+    font-weight: 700;
+
+}
+
+/* online-games section styling */
+.online-games{
+    margin: 7rem 0rem;
+}
+.heading, .subtitle{
+text-align: center;
+}
+.heading>span{
+
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1rem;
+    margin: 2rem 5rem;
+}
+.boxs> img{
+    width: 18rem;
+    height: 20rem;
+    border-radius: 16px;
+background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+.caption, .subtitle{
+    color: #534C64;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 1.1rem 0px;
+
+ } 
+.caption{
+   font-weight: 500;
+   text-align: left;
+ } 
+
+
+
+ /* playinstantly-section styling */
+ .playinstantly-section{
+    margin: 2rem 0rem;
+    margin-bottom: -200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+ }
+
+ .instand-headings{
+    text-align: right;
+    font-size: 2.6rem;
+    font-weight: 700;
+    width: 75%;
+    color: #0B0223;
+
+ }
+ .instand-headings span{
+    background: linear-gradient(180deg, #F948B2,  #8758F1 );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+
+ }
+ .description{
+    color: #534C64;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 1.1rem;   
+    font-weight: 400;
+    width: 75%;
+
+
+ }
+ .large-image{
+    border-radius: 8px;
+    position: relative;
+    left: 5rem;
+    height:38rem ;
+    width:35rem;
+    border-radius: 8px;
+ }
+ .not-large-image{
+    position: relative;
+    bottom: 15rem;
+    height: 21rem;
+    width: 20rem ;
+    border: 10px solid #FFF;
+ }
+
+/* Icon Section Styling */
+
+.allgame-icons{
+    display: grid;
+    padding:  8rem 0rem;
+    border: 5px solid red;
+     grid-template-columns: repeat(5, 1fr);
+     gap: 1.2rem;
+     margin-top: 2rem;
+     
+ }
+ .icon-container{
+    
+        border-radius: 50px;
+        background: #FFF;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-around;
+        border: 2px solid tomato;
+        align-items: center;
+        text-align: center;
+        gap: 0.2rem;
+ }
+ .icon-container:hover{
+        color: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);    
+        background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    
+ }
+ .icon{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+
+ }
+ .icon-title{
+    color: #0B0223;
+    font-size: 1.2rem;
+    font-weight: 600;
+    
+
+
+ }
+
+ /* Footer Section Syling */
+ footer{
+
+    background: #0B0223;
+ }
+ .company-info{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+    padding: 2rem;
+ }
+ .list, footer>p, .icons{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+    margin: 1.5rem 0rem;
+ }
+ .sevices, .tearms{
+    color: #FFF;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+
+ }
+ .tearms{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
+ }
+ .company-info .headings{
+    color: #FFF;     
+    padding: 10px;
+}
+ .company-info .headings span{
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.icons {
+   
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+  
+    background-color: whitesmoke;
+ 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
+  }
+  
+  .icons:hover {
+        background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    
+  }
+  .copyright{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+    margin-bottom: 0px;
+
+  }
