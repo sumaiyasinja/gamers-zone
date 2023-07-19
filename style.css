@@ -4,6 +4,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 body{
     font-family: 'Work Sans', sans-serif;
 }
@@ -12,7 +13,6 @@ body{
     font-family: Work Sans;
     font-size: 2.8rem;
     font-weight: 700;
-    /* border: 2px solid blueviolet; */
     
 }
 
@@ -159,14 +159,14 @@ background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
     display: flex;
     justify-content: space-around;
     align-items: center;
-
  
     
    
 }
 .btn-knowmore{
-margin-top: 2rem;
-margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
     
 }
 .gamer-headings{
@@ -186,6 +186,7 @@ margin-bottom: 2rem;
     font-weight: 400;
     text-align: right;
     margin-top: 2rem;   
+
 }
 
 .purpose-text{
@@ -209,8 +210,11 @@ margin-bottom: 2rem;
 .heading, .subtitle{
 text-align: center;
 }
-.heading>span{
-
+.colhead{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .box-container{
@@ -219,12 +223,17 @@ text-align: center;
     gap: 1rem;
     margin: 2rem 5rem;
 }
+
 .boxs> img{
     width: 18rem;
     height: 20rem;
     border-radius: 16px;
-background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+background:  lightgray 50% / cover no-repeat;
 }
+#box-3{
+    z-index: -1;
+}
+
 .caption, .subtitle{
     color: #534C64;
     text-align: center;
@@ -237,13 +246,63 @@ background: url(<path-to-image>), lightgray 50% / cover no-repeat;
    font-weight: 500;
    text-align: left;
  } 
-
-
+.btn-knowmore{
+    display: flex;
+    justify-content: flex-end;
+}
+.boxs {
+    position: relative;
+  }
+  
+  .boxs .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+    z-index: 2;
+  }
+  
+  .boxs:hover .overlay {
+    opacity: 1;
+    border: 2px solid #FF42A5;
+  }
+  
+  .boxs .overlay i {
+    color: black;
+    border-radius: 50%;
+    padding: 2rem;
+    font-size: 1.5rem;
+    background-color: #fff;
+    
+  }
+  
+  .boxs .overlay p {
+    color: #FF42A5;
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  .boxs img {
+    width: 18rem;
+    height: 20rem;
+    border-radius: 16px;
+    background: lightgray 50% / cover no-repeat;
+  }
+  
 
  /* playinstantly-section styling */
  .playinstantly-section{
     margin: 2rem 0rem;
-    margin-bottom: -200px;
+    /* margin-bottom: -200px; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -291,16 +350,25 @@ background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     width: 20rem ;
     border: 10px solid #FFF;
  }
-
+.image{
+    height: 42rem;
+    /* border: 4px solid red; */
+}
 /* Icon Section Styling */
 
+.allgame-icon-section{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+     
+ }
 .allgame-icons{
     display: grid;
     padding:  8rem 0rem;
-    border: 5px solid red;
      grid-template-columns: repeat(5, 1fr);
      gap: 1.2rem;
      margin-top: 2rem;
+     display: flex;
+  justify-content: center; /* Center the icon containers horizontally */
+  flex-wrap: wrap; 
      
  }
  .icon-container{
@@ -309,15 +377,17 @@ background: url(<path-to-image>), lightgray 50% / cover no-repeat;
         background: #FFF;
         padding: 1rem;
         display: flex;
-        justify-content: space-around;
-        border: 2px solid tomato;
+        justify-content: space-around;       
         align-items: center;
         text-align: center;
         gap: 0.2rem;
  }
  .icon-container:hover{
-        color: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);    
-        background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 0.1rem solid #FF42A5;
     
  }
  .icon{
