@@ -672,6 +672,9 @@ background:  lightgray 50% / cover no-repeat;
     align-items: center;
     width: 98%;
     height: 83%;}
+    .instand-headings , .description{
+        width: 100%;
+    }
 }
   @media screen and (min-width: 570px) and (max-width: 992px)  { 
     .nav-section-container,  .nav-right, .overlay, .playinstantly-section{
@@ -730,9 +733,7 @@ background:  lightgray 50% / cover no-repeat;
   .btn-knowmore{
     margin: 2rem auto;   
 }
-.instand-headings,
-
-.gamer-headings, .game-description, .purpose-text, .description {
+.instand-headings, .description, .gamer-headings, .game-description, .purpose-text, .description {
     text-align: center;
 }
 .online-games{
@@ -847,4 +848,8 @@ background:  lightgray 50% / cover no-repeat;
     align-items: center;
     width: 98%;
     height: 83%;}
+    .instand-headings , .description{
+        width: 100%;
+    }
+
 }
