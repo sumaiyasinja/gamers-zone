@@ -5,9 +5,8 @@
     box-sizing: border-box;
 }
 section, header, footer{
-    width: 100%;
+    width: 98%;
     height: auto;
-    /* border: 8px solid red; */
 }
 
 body{
@@ -32,9 +31,9 @@ body{
     border: none;
     cursor: pointer;
   box-shadow: 0 8px #999;
+  transition: background-color 0.5s ease;
 }
 .button-primary:hover {
-    /* opacity: 0.6; */
     background: transparent;
     color: green;
 
@@ -109,6 +108,12 @@ body{
    gap: 1em;
    padding:  1rem 1.5rem;
    display: flex;
+   transition: color 0.2 ease-in-out;
+}
+.link-box > span:hover{
+   color: red;
+  
+ 
 }
 .link-box span{
     color: #3C354F;
@@ -187,12 +192,8 @@ body{
     background: rgba(255, 66, 165, 0.03);
    
 }
-.btn-knowmore{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    position: relative;
-    left: 140px;   
-    width: auto;
+.gamerbtncontainer{
+    text-align: right;
 }
 .gamer-headings{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -228,12 +229,12 @@ body{
 
 }
 
-/* online-games section styling */
+/* Online games section styling */
 .online-games{
     margin: 5rem 0rem;
     padding: 1 2px;
     width: auto;
-     padding-left: 0rem;
+    
 }
 .heading, .subtitle{
     text-align: center;
@@ -299,9 +300,11 @@ body{
     height: 78%;
     background-color: rgba(0, 0, 0, 0.7);
     opacity: 0;
-    transition: opacity 0.3s ease;
-    border-radius: 8px;
+    transition: opacity 0.4s ease;
+    border-radius: 1rem;
     z-index: 2;
+    cursor: pointer;
+
   }
  
   .boxs:hover .overlay {
@@ -321,14 +324,12 @@ body{
   
   .boxs .overlay p {
     color: #FF42A5;
-    font-size: 1.5rem;
-    margin-top: 1rem;
+    font-size: 1.2rem;
+    margin-top: 0.7rem;
   }
   
   .boxs img {
-  
-    border-radius: 1rem;
-    background: lightgray 50% / cover no-repeat;
+     border-radius: 1rem;
   }
   
 
@@ -417,6 +418,8 @@ body{
         align-items: center;
         text-align: center;
         gap: 0.2rem;
+        border: 2px solid white;
+        transition: color 0.5s ease;
  }
  .icon-container:hover{
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
@@ -424,7 +427,6 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     border: 2px solid #FF42A5;
-    
  }
  .icon{
     width: 100%;
@@ -452,6 +454,11 @@ body{
     text-align: center;
     align-items: center;
     margin-bottom: 0rem;
+   }
+   .list >li:hover{
+    transition: background-color 0.2s ease;
+    color: #F948B2;
+    cursor: pointer;
    }
     
  .list, footer>p, .icons{
@@ -497,8 +504,9 @@ body{
     width: 3rem;
     height: 3rem; 
     background-color: whitesmoke;
+    cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.2s ease;
+    transition: background-color 0.5s ease;
   }
   
   .icons:hover {
@@ -512,6 +520,7 @@ body{
     font-weight: 500;
     padding-bottom: 2rem;
     margin-bottom: 0px;
+    cursor: not-allowed;
 
   }
 
@@ -522,7 +531,13 @@ body{
   
   /* mrdia query for mbl responsiveness */
   @media screen and (max-width: 430px) { 
-   
+    .banner-section .textbox {
+        padding: 0%;
+    }
+    section, header{
+        width: 90%;
+    }
+  
     .banner-section .textbox .headings{
         font-size: 2rem;
 
@@ -557,6 +572,7 @@ body{
         height: 60%;
         padding: 0.5rem;
     }
+   
     .link-box> svg{
 
     width: 40px;
@@ -567,7 +583,7 @@ body{
     width: 150px;
   
     }
-  
+ 
 
     .banner-section{
         flex-direction: column-reverse;
@@ -591,10 +607,8 @@ body{
         flex-direction: column;
         text-align: center;       
   }
-  .btn-knowmore {
-   position: static;
-   
-    
+  .gamerbtncontainer{
+    text-align: center;
 }
 .instand-headings, .description,
 .gamer-headings, .game-description, .purpose-text, .description {
@@ -612,13 +626,12 @@ body{
 
  }
  .large-image{
-    left: 4.9rem;
-    height: 19rem;
-    width: 16rem;
+    left: 4.5rem;
+    height: 16rem;
+    width: 17rem;
     
  }
  .not-large-image{
- 
     bottom: 9rem;
     height: 10rem;
     width: 9rem;
@@ -686,12 +699,10 @@ body{
     padding-left: 0px;
   }
 
-#box-1 .overlay ,#box-2 .overlay,
- #box-3 .overlay ,#box-4 .overlay{
-    border-radius: 24px;
-
-     width: 100%;
-     height: 79%;}
+  .boxs .overlay {
+    width: 100%;
+    height: 73%;
+}
      
      .boxs{
 
@@ -699,9 +710,6 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-  
-}
-.boxs{
     width: 50%;
     height: 75%;
     margin-top: 40px;
@@ -721,10 +729,29 @@ body{
   
 
 }
+.icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.icon-title{
+    font-size: 10px;}
+
+.icon-container {
+    padding: 0px;
+}
+footer{
+    width: 90%;
+    padding: 0px;
+   }
     
 }
 /* My tablet portrait specific styles is added here */
-@media screen and (min-width:430px) and (max-width: 992px) {
+@media screen and (min-width:430px) and (max-width:  992px) {
+     /* .boxs> img {
+        width: 100%;
+        border-radius: 16px;
+        margin-bottom: 0px;
+    } */
     .banner-section {
       flex-direction: column;
     }
@@ -770,8 +797,8 @@ body{
 
 }
 .banner-section .img >img, .gamer-section .img> img{
-  height: 90%;
-  width:  90%;
+    height: 90%;
+    width: 85%;
 
 
 }
@@ -791,13 +818,15 @@ body{
 .online-games{
     margin: 2rem 0rem;
 }
-.box-container, .overlay{   
-    grid-template-columns: repeat(2, 1fr); 
-gap: 2rem;
-margin: 0rem ;
-padding: 3rem;
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   justify-content: center;
+    gap: 8px;
+    padding-left: 10px;
+    
+  }
 
-}
 .instand-text-box, .instand-headings {
     width: 90%;
     
@@ -862,6 +891,7 @@ font-size: .85rem;
     margin: 4px 0px ;
     width: auto;
     padding: 4rem 1.2rem ;
+   
     
     
 }
@@ -883,13 +913,14 @@ font-weight: 600;
     height: 94%;
     
 }
-.btn-knowmore {
-   position: static; 
- }
+.gamerbtncontainer{
+    text-align: center;
+}
 
 .boxs .overlay {
-    width: 100%;
-    height: 85%;
+    width: 84%;
+    height: 79%;
+    border-radius: 15px;
 }
 
 }
