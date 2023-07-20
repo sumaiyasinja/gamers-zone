@@ -30,7 +30,21 @@ body{
     font-weight: 600;
     text-transform: uppercase;
     border: none;
+    cursor: pointer;
+  box-shadow: 0 8px #999;
 }
+.button-primary:hover {
+    /* opacity: 0.6; */
+    background: transparent;
+    color: green;
+
+}
+.button-primary:active {
+  box-shadow: 0 4px #666;
+  transform: translateY(4px);
+  
+}
+
 
 /* navbar styling start */
 .header-section{
@@ -175,7 +189,7 @@ body{
     margin-top: 2rem;
     margin-bottom: 2rem;
     position: relative;
-    left: 70%;   
+    left: 140px;   
     width: auto;
 }
 .gamer-headings{
@@ -234,20 +248,22 @@ body{
 }
 
 .box-container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    /* border: 2px solid orange; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding-left: 90px;
 }
 .boxs{
-    width: 100%;
-    border-radius: 1rem;
-    /* border: 2px solid orange; */
+    width: 80%;
+
 }
 
 .boxs> img{
-    height: auto;
-    width: auto
+
+    width: 83%;
     border-radius: 16px;
+    margin-bottom: 10px;
 }
 
 
@@ -278,7 +294,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 83%;
-    height: 84%;
+    height: 78%;
     background-color: rgba(0, 0, 0, 0.7);
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -316,7 +332,7 @@ body{
 
  /* playinstantly-section styling */
  .playinstantly-section{
-    margin: 2rem 0rem;
+    margin: 0rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -496,16 +512,27 @@ body{
     margin-bottom: 0px;
 
   }
+
+
+
+
+
   
   /* mrdia query for mbl responsiveness */
   @media screen and (max-width: 576px) { 
-    .textbox{
-        display: flex;
-        flex-direction: column;
-    }
+   
     .banner-section .textbox .headings{
         font-size: 2rem;
 
+    }
+    .banner-section .textbox .button-primary {
+        display: inline-block;
+        width: 34%;
+        height: 55px;
+        text-align: center;
+        padding: 1rem 1.2rem;
+        margin: 1.2rem 0.1rem;
+        font-size: 0.8rem;  
     }
     .large-heading{
         font-size: 4.5rem;
@@ -550,8 +577,8 @@ body{
     }
     .banner-section .img > img,
     .gamer-section .img > img {
-        height: 70%;
-        width: 96%;
+        height: 75%;
+        width: 87%;
     }
     
     .gamer-section {
@@ -578,13 +605,7 @@ body{
 .online-games{
     margin: 2rem 0rem;
 }
-.box-container, .overlay{   
-    grid-template-columns: repeat(1, 1fr); 
-    gap: 2rem;
-    margin: 0rem ;
-    /* padding: 3rem; */
-    
-}
+   
 .instand-text-box, .instand-headings {
     width: 90%;
 
@@ -607,25 +628,11 @@ body{
    height: auto;
 }
 
- .banner-section .textbox .button-primary{
-    padding: 1rem 1.2rem;
-    margin: 1.2rem 0rem;
-    gap: 1rem;
-    color: #FFF;
-    font-size: 1.25rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    border: none;
-}
-
-
  .online-head, .colhead{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 .caption, .subtitle{
-
     font-size: 0.9rem;
-
     margin: 0.1rem 0rem;
     margin-top: 2rem;
 
@@ -669,17 +676,21 @@ body{
     font-weight: 600;
 
  }
- .icon-container > img{
-    width: 70%;
-    height: 70%;
-}
-#box-1 .overlay ,#box-2 .overlay{
-   width: 100%;
-   height: 87%;}
+ .box-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding-left: 0px;
+  }
+
+#box-1 .overlay ,#box-2 .overlay,
  #box-3 .overlay ,#box-4 .overlay{
+    border-radius: 24px;
 
      width: 100%;
-     height: 89%;}
+     height: 79%;}
      
      .boxs{
 
@@ -689,12 +700,20 @@ body{
     flex-direction: column;
   
 }
+.boxs{
+    width: 50%;
+    height: 75%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+}
+
 
 .boxs> img{
-    padding: 3px;
+    padding: 2px;
     height: auto;
-    width: 100%;
-    border-radius: 16px;
+    width: auto;
+    border-radius: 24px;
 }
 .banner-section .textbox {
     padding: 20%;
