@@ -4,13 +4,17 @@
     padding: 0px;
     box-sizing: border-box;
 }
+section, header, footer{
+    width: 100%;
+    height: auto;
+    /* border: 8px solid red; */
+}
 
 body{
     font-family: 'Work Sans', sans-serif;
 }
 .headings{
     text-align: center;
-    font-family: Work Sans;
     font-size: 2.8rem;
     font-weight: 700;
     
@@ -34,6 +38,7 @@ body{
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
     width: 100%;
     height: 8.1rem;
+    width: 100%;
 }
 .nav-section-container{
     display: flex;
@@ -65,7 +70,7 @@ body{
 .nav-left > .headings{
     color: #0B0223;
     font-family: Work Sans;
-    font-size: 45px;
+    font-size: 2.6rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -92,7 +97,7 @@ body{
 .link-box span{
     color: #3C354F;
     text-align: center;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -107,27 +112,20 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-
+    height: auto;      
 }
+
 .textbox .headings{
     color: #0B0223;
     text-align: center;
-    font-family: Work Sans;
     font-size: 3rem;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     text-transform: uppercase;
-   /* margin: 2rem; */
 }
 .large-heading{
     text-align: center;
-    font-family: Work Sans;
     font-size: 5.8rem;
-    font-style: normal;
     font-weight: 800;
-    line-height: normal;
     text-transform: uppercase;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
@@ -135,10 +133,15 @@ body{
     -webkit-text-fill-color: transparent;
 }
 .banner-section .textbox {
-    padding: 2rem;
-    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    padding: 5rem;
+    background-image: url('images/Group\ 14.png');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: auto;
 
 }
+
 .textbox li{
     color: #534C64;
 
@@ -150,7 +153,7 @@ body{
 
  .sign-in{
     align-items: flex-start;
-background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
 }
 .go-rogue {
     border-radius: 48px;
@@ -161,18 +164,19 @@ background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
 .gamer-section{
     margin-top: 2rem;
     margin-bottom: 5rem;
-    padding: 2rem;
+    padding: 6rem 2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-   
+    background: rgba(255, 66, 165, 0.03);
    
 }
 .btn-knowmore{
     margin-top: 2rem;
     margin-bottom: 2rem;
-    /* margin-left: auto; */
-    
+    position: relative;
+    left: 70%;   
+    width: auto;
 }
 .gamer-headings{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -183,7 +187,7 @@ background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
     font-weight: 700;
     text-align: right;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    
 }
 .game-description{
     color: #534C64;
@@ -210,10 +214,13 @@ background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
 
 /* online-games section styling */
 .online-games{
-    margin: 7rem 0rem;
+    margin: 5rem 0rem;
+    padding: 1 2px;
+    width: auto;
+     padding-left: 0rem;
 }
 .heading, .subtitle{
-text-align: center;
+    text-align: center;
 
 }
 .online-head, .colhead{
@@ -229,36 +236,35 @@ text-align: center;
 .box-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
-    gap: 1rem;
-    margin: 2rem 5rem;
+    /* border: 2px solid orange; */
+}
+.boxs{
+    width: 100%;
+    border-radius: 1rem;
+    /* border: 2px solid orange; */
 }
 
 .boxs> img{
-    width: 18rem;
-    height: 20rem;
+    height: auto;
+    width: auto
     border-radius: 16px;
-background:  lightgray 50% / cover no-repeat;
 }
-#box-3{
-    z-index: -1;
-}
+
 
 .caption, .subtitle{
     color: #534C64;
     text-align: center;
     font-size: 1.1rem;
     font-weight: 400;
-    margin: 1.1rem 0px;
+    margin: 1.1rem 0rem;
+    
 
  } 
 .caption{
    font-weight: 500;
    text-align: left;
  } 
-.btn-knowmore{
-    display: flex;
-    justify-content: flex-end;
-}
+
 .boxs {
     position: relative;
   }
@@ -271,18 +277,19 @@ background:  lightgray 50% / cover no-repeat;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 80%;
+    width: 83%;
+    height: 84%;
     background-color: rgba(0, 0, 0, 0.7);
     opacity: 0;
     transition: opacity 0.3s ease;
     border-radius: 8px;
     z-index: 2;
   }
-  
+ 
   .boxs:hover .overlay {
     opacity: 1;
     border: 2px solid #FF42A5;
+    
   }
   
   .boxs .overlay i {
@@ -297,13 +304,12 @@ background:  lightgray 50% / cover no-repeat;
   .boxs .overlay p {
     color: #FF42A5;
     font-size: 1.5rem;
-    margin-top: 10px;
+    margin-top: 1rem;
   }
   
   .boxs img {
-    width: 18rem;
-    height: 20rem;
-    border-radius: 16px;
+  
+    border-radius: 1rem;
     background: lightgray 50% / cover no-repeat;
   }
   
@@ -311,7 +317,6 @@ background:  lightgray 50% / cover no-repeat;
  /* playinstantly-section styling */
  .playinstantly-section{
     margin: 2rem 0rem;
-    /* margin-bottom: -200px; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -327,8 +332,8 @@ background:  lightgray 50% / cover no-repeat;
     font-weight: 700;
     width: 75%;
     color: #0B0223;
-
- }
+    margin: 1rem 0rem;
+}
  .instand-headings span{
     background: linear-gradient(180deg, #F948B2,  #8758F1 );
     background-clip: text;
@@ -348,7 +353,6 @@ background:  lightgray 50% / cover no-repeat;
 
  }
  .large-image{
-    border-radius: 8px;
     position: relative;
     left: 5rem;
     height:38rem ;
@@ -373,15 +377,16 @@ background:  lightgray 50% / cover no-repeat;
      
  }
 .allgame-icons{
+   
     height: auto;
     display: grid;
-    padding:  8rem 0rem;
+    padding:  8rem 2rem;
      grid-template-columns: repeat(5, 1fr);
      gap: 1.2rem;
-     margin-top: 2rem;
+     margin-top: 1rem;
      display: flex;
-  justify-content: center; /* Center the icon containers horizontally */
-  flex-wrap: wrap; 
+    justify-content: center; 
+    flex-wrap: wrap; 
      
  }
  .icon-container{
@@ -400,7 +405,7 @@ background:  lightgray 50% / cover no-repeat;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    border: 0.1rem solid #FF42A5;
+    border: 2px solid #FF42A5;
     
  }
  .icon{
@@ -421,16 +426,16 @@ background:  lightgray 50% / cover no-repeat;
  footer{
 
     background: #0B0223;
+    padding: 5rem 0rem;
  }
  .company-info{
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin-top: 2rem;
     margin-bottom: 0rem;
-    padding: 2rem;
- }
+   }
+    
  .list, footer>p, .icons{
     display: flex;
     justify-content: center;
@@ -454,7 +459,7 @@ background:  lightgray 50% / cover no-repeat;
  }
  .company-info .headings{
     color: #FFF;     
-    padding: 10px;
+    padding: 1rem;
 }
  .company-info .headings span{
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
@@ -468,14 +473,12 @@ background:  lightgray 50% / cover no-repeat;
     align-items: center;
     gap: 5rem;
 }
-.icons {
-   
+.icons {  
     border-radius: 50%;
+    font-size: 30px;
     width: 3rem;
-    height: 3rem;
-  
+    height: 3rem; 
     background-color: whitesmoke;
- 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.2s ease;
   }
@@ -493,7 +496,21 @@ background:  lightgray 50% / cover no-repeat;
     margin-bottom: 0px;
 
   }
-  @media (max-width: 570px) { 
+  
+  /* mrdia query for mbl responsiveness */
+  @media screen and (max-width: 576px) { 
+    .textbox{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-section .textbox .headings{
+        font-size: 2rem;
+
+    }
+    .large-heading{
+        font-size: 4.5rem;
+
+    }
     .nav-section-container,  .nav-right, .overlay, .playinstantly-section{
         flex-direction: column;
         align-items: center;
@@ -505,55 +522,58 @@ background:  lightgray 50% / cover no-repeat;
         width: 100%;
         height: 100%;
     }
+   
     .link-box{
-        font-size: 8px;
-        width: 100%;
-    }
-    .link-box{
-        font-size: 8px;
+        font-size: 0.4rem;
         width: 100%;
         height: 60%;
+        padding: 0.5rem;
+    }
+    .link-box> svg{
+
+    width: 40px;
+    height: 40px;
+    }
+    .link-box> span{
+
+    width: 150px;
+  
     }
   
-    .link-box> svg{
-      
-        width: 10%;
-        height: 10%;
-    }
+
     .banner-section{
         flex-direction: column-reverse;
         gap: 5rem;
-        border-radius: 2px solid black;
-        /* justify-content: center; */
-        /* align-items: center; */
-        text-align: center;
-       
+        border-radius: 2px solid black; 
+          
     
     }
-    .banner-section .img >img, .gamer-section .img> img{
-      height: 90%;
-      width:  90%;
-      /* gap: 700rem; */
-      /* margin-left: 2rem;       */
-    
+    .banner-section .img > img,
+    .gamer-section .img > img {
+        height: 70%;
+        width: 96%;
     }
+    
     .gamer-section {
         margin-top: 2rem;
         margin-bottom: 5rem;
-        padding: 0rem;
+        /* padding: 2rem; */
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        text-align: center;
-  
+        text-align: center;       
   }
-  .btn-knowmore{
-    margin: 2rem auto;   
+  .btn-knowmore {
+   position: static;
+   
+    
 }
-.instand-headings,
-
+.instand-headings, .description,
 .gamer-headings, .game-description, .purpose-text, .description {
     text-align: center;
+}
+.instand-headings, .description{
+    width: 100%;
 }
 .online-games{
     margin: 2rem 0rem;
@@ -562,7 +582,7 @@ background:  lightgray 50% / cover no-repeat;
     grid-template-columns: repeat(1, 1fr); 
     gap: 2rem;
     margin: 0rem ;
-    padding: 3rem;
+    /* padding: 3rem; */
     
 }
 .instand-text-box, .instand-headings {
@@ -597,17 +617,8 @@ background:  lightgray 50% / cover no-repeat;
     text-transform: uppercase;
     border: none;
 }
-.box-container {
-    margin-left: 0px;
-    margin-right: 0px;
-    
-}
 
 
- .icon-container{
-    /* width: 60%;
-    margin: auto; */
- }
  .online-head, .colhead{
     font-size: 1.8rem;
 }
@@ -615,7 +626,7 @@ background:  lightgray 50% / cover no-repeat;
 
     font-size: 0.9rem;
 
-    margin: 0.1rem 0px;
+    margin: 0.1rem 0rem;
     margin-top: 2rem;
 
  } 
@@ -652,86 +663,107 @@ background:  lightgray 50% / cover no-repeat;
  .icon-container{
     width: auto;
  }
- .icon-title,copyright {
+ .icon-title,.copyright {
    
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     font-weight: 600;
 
  }
  .icon-container > img{
     width: 70%;
     height: 70%;
- }
- .boxs .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
+}
+#box-1 .overlay ,#box-2 .overlay{
+   width: 100%;
+   height: 87%;}
+ #box-3 .overlay ,#box-4 .overlay{
+
+     width: 100%;
+     height: 89%;}
+     
+     .boxs{
+
+    border-radius: 1rem;
     display: flex;
+    justify-content: center;
     flex-direction: column;
+  
+}
+
+.boxs> img{
+    padding: 3px;
+    height: auto;
+    width: 100%;
+    border-radius: 16px;
+}
+.banner-section .textbox {
+    padding: 20%;
+  
+
+}
+    
+}
+/* My tablet portrait specific styles is added here */
+@media screen and (min-width:576px ) and (max-width: 992px) {
+    .banner-section {
+      flex-direction: column;
+    }
+    .textbox {
+      padding: 2rem;
+    }
+    .large-heading {
+      font-size: 4rem;
+    }
+    .instand-headings, .description{
+        width: 100%;
+    }
+  
+  .nav-section-container,  .nav-right, .overlay, .playinstantly-section{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.header-section{
+    margin-bottom: 5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.link-box{
+    font-size: 8px;
+    width: 100%;
+    height: 60%;
+}
+
+.link-box> svg{
+  
+    width: 10%;
+    height: 10%;
+}
+.banner-section{
+    flex-direction: column-reverse;
+    gap: 5rem;
+    text-align: center;
+   
+
+}
+.banner-section .img >img, .gamer-section .img> img{
+  height: 90%;
+  width:  90%;
+
+
+}
+.gamer-section {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    padding: 0rem;
     justify-content: center;
     align-items: center;
-    width: 98%;
-    height: 83%;}
-    .instand-headings , .description{
-        width: 100%;
-    }
-}
-  @media screen and (min-width: 570px) and (max-width: 992px)  { 
-    .nav-section-container,  .nav-right, .overlay, .playinstantly-section{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        
-    }
-    .header-section{
-        margin-bottom: 5rem;
-        width: 100%;
-        height: 100%;
-    }
-    .link-box{
-        font-size: 8px;
-        width: 100%;
-    }
-    .link-box{
-        font-size: 8px;
-        width: 100%;
-        height: 60%;
-    }
-  
-    .link-box> svg{
-      
-        width: 10%;
-        height: 10%;
-    }
-    .banner-section{
-        flex-direction: column-reverse;
-        gap: 5rem;
-        border-radius: 2px solid black;
-        /* justify-content: center; */
-        /* align-items: center; */
-        text-align: center;
-       
-    
-    }
-    .banner-section .img >img, .gamer-section .img> img{
-      height: 90%;
-      width:  90%;
-      /* gap: 700rem; */
-      /* margin-left: 2rem;       */
-    
-    }
-    .gamer-section {
-        margin-top: 2rem;
-        margin-bottom: 5rem;
-        padding: 0rem;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-  
-  }
-  .btn-knowmore{
-    margin: 2rem auto;   
+    flex-direction: column;
+    text-align: center;
+
 }
 .instand-headings, .description, .gamer-headings, .game-description, .purpose-text, .description {
     text-align: center;
@@ -741,34 +773,32 @@ background:  lightgray 50% / cover no-repeat;
 }
 .box-container, .overlay{   
     grid-template-columns: repeat(2, 1fr); 
-    gap: 2rem;
-    margin: 0rem ;
-    padding: 3rem;
-    
+gap: 2rem;
+margin: 0rem ;
+padding: 3rem;
+
 }
 .instand-text-box, .instand-headings {
     width: 90%;
-
- }
- .large-image{
-    left: 6rem;
-    height: 30rem;
-    width: 32rem;
     
- }
- .not-large-image{
- 
-    bottom: 9rem;
-    height: 18rem;
-    width: 16rem;
-
- }
+}
+.large-image{
+    left: 18%;
+    
+    
+}
+.not-large-image{
+    bottom: 15rem;
+    height: 20rem;
+    width: 19rem;
+    
+}
 .image{
-   margin-top: 4rem;
-   height: auto;
+    margin-top: 4rem;
+    height: auto;
 }
 
- .banner-section .textbox .button-primary{
+.banner-section .textbox .button-primary{
     padding: 1rem 1.2rem;
     margin: 1.2rem 0rem;
     gap: 1rem;
@@ -779,77 +809,67 @@ background:  lightgray 50% / cover no-repeat;
     border: none;
 }
 
-
- .icon-container{
-    /* width: 60%;
-    margin: auto; */
- }
- .online-head, .colhead{
+.online-head, .colhead{
     font-size: 1.8rem;
 }
-.caption, .subtitle{
-
-    font-size: 0.9rem;
-
+.caption, .subtitle{   
+    font-size: 0.9rem;    
     margin: 0.1rem 0px;
     margin-top: 2rem;
+    
+} 
 
- } 
-
- .list{
+.list{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;
-    align-items: center;
-    gap: 1.2rem;
-
-    list-style: none;
-    margin: 3rem 2rem;
- }
- #list-2{
+grid-template-columns: repeat(3, 1fr);
+text-align: center;
+align-items: center;
+gap: 1.2rem;
+list-style: none;
+margin: 3rem 2rem;
+}
+#list-2{
     display: grid;
     grid-template-columns: repeat(2, 1fr)
- }
- .sevices, .tearms{
-    
-    font-size: .85rem;
-   
+}
+.sevices, .tearms{  
+font-size: .85rem;
 
- }
-  .allgame-icons{
+}
+.allgame-icons{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 4rem;
+    margin: 4px 0px ;
     width: auto;
-    padding:  0rem ;
-     
-
- }
- .icon-container{
+    padding: 4rem 1.2rem ;
+    
+    
+}
+.nav-left{
+    margin-bottom: 24px;
+}
+.icon-container{
     width: auto;
- }
- .icon-title,copyright {
-   
-    font-size: 1.1rem;
-    font-weight: 600;
+    padding: 6px;
+}
+.icon-title,.copyright {
+    
+    font-size: 1rem;
+font-weight: 600;
 
+}
+.icon-container > img{
+    width: 20%;
+    height: 94%;
+    
+}
+.btn-knowmore {
+   position: static; 
  }
- .icon-container > img{
-    width: 80%;
-    height: 80%;
- }
- .boxs .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 98%;
-    height: 83%;}
-    .instand-headings , .description{
-        width: 100%;
-    }
+
+.boxs .overlay {
+    width: 100%;
+    height: 85%;
+}
 
 }
