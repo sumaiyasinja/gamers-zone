@@ -59,6 +59,7 @@ body{
     justify-content: space-between;
     padding: 2rem 9rem;
     margin-bottom: 1rem;
+  
 
 }
 .nav-left .headings span{
@@ -75,6 +76,7 @@ body{
     font-size: 1.125rem;
     font-weight: 500;
     gap: 2rem;
+    margin-bottom: 1.5rem;
 }
 .nav-left img{
     width: 5rem;
@@ -519,7 +521,7 @@ body{
 
   
   /* mrdia query for mbl responsiveness */
-  @media screen and (max-width: 576px) { 
+  @media screen and (max-width: 430px) { 
    
     .banner-section .textbox .headings{
         font-size: 2rem;
@@ -527,22 +529,21 @@ body{
     }
     .banner-section .textbox .button-primary {
         display: inline-block;
-        width: 34%;
+        width: 40%;
         height: 55px;
         text-align: center;
         padding: 1rem 1.2rem;
         margin: 1.2rem 0.1rem;
         font-size: 0.8rem;  
     }
-    .large-heading{
-        font-size: 4.5rem;
+    .large-heading, .headings{
+        font-size: 3.5rem;
 
     }
     .nav-section-container,  .nav-right, .overlay, .playinstantly-section{
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        
+        justify-content: center;   
     }
     .header-section{
         margin-bottom: 5rem;
@@ -611,16 +612,16 @@ body{
 
  }
  .large-image{
-    left: 6rem;
-    height: 20rem;
-    width: 17rem;
+    left: 4.9rem;
+    height: 19rem;
+    width: 16rem;
     
  }
  .not-large-image{
  
     bottom: 9rem;
-    height: 12rem;
-    width: 11rem;
+    height: 10rem;
+    width: 9rem;
 
  }
 .image{
@@ -723,7 +724,7 @@ body{
     
 }
 /* My tablet portrait specific styles is added here */
-@media screen and (min-width:576px ) and (max-width: 992px) {
+@media screen and (min-width:430px) and (max-width: 992px) {
     .banner-section {
       flex-direction: column;
     }
